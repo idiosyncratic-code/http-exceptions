@@ -1,0 +1,3 @@
+# Idiosyncratic HTTP Exceptions
+
+
