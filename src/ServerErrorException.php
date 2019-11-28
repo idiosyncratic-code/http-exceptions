@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Idiosyncratic\Http\Exception;
 
-interface ServerErrorException extends HttpException
+interface ServerErrorException
 {
     public const INTERNAL_SERVER_ERROR = 500;
     public const NOT_IMPLEMENTED = 501;

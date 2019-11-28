@@ -5,12 +5,28 @@ declare(strict_types=1);
 namespace Idiosyncratic\Http\Exception;
 
 use Psr\Http\Message\ServerRequestInterface;
+use RuntimeException;
 
-interface HttpException
+abstract class HttpException extends RuntimeException
 {
-    public function getServerRequest() : ServerRequestInterface;
+    /** @var ServerRequestInterface */
+    private $serverRequest;
 
-    public function getHttpStatusCode() : int;
+    public function __construct(
+        ServerRequestInterface $serverRequest,
+        ?Throwable $previous = null
+    ) {
+        $this->serverRequest = $serverRequest;
 
-    public function getHttpReasonPhrase() : string;
+        parent::__construct($this->getHttpReasonPhrase(), $this->getHttpStatusCode(), $previous);
+    }
+
+    public function getServerRequest() : ServerRequestInterface
+    {
+        return $this->serverRequest;
+    }
+
+    abstract public function getHttpStatusCode() : int;
+
+    abstract public function getHttpReasonPhrase() : string;
 }
