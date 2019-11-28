@@ -6,6 +6,7 @@ namespace Idiosyncratic\Http\Exception;
 
 use Psr\Http\Message\ServerRequestInterface;
 use RuntimeException;
+use Throwable;
 
 abstract class HttpException extends RuntimeException
 {

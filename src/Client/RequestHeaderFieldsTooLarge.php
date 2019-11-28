@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Idiosyncratic\Http\Exception\Client;
 
-use Idiosyncratic\Http\Exception\HttpException;
 use Idiosyncratic\Http\Exception\ClientErrorException;
+use Idiosyncratic\Http\Exception\HttpException;
 
 final class RequestHeaderFieldsTooLarge extends HttpException implements ClientErrorException
 {
