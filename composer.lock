@@ -291,12 +291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/idiosyncratic-code/coding-standard.git",
-                "reference": "2f049ad261b9649ccd57756efd5940316ff01443"
+                "reference": "c14ec16a05dafc7f27fbf782c166da0e2db65da2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/idiosyncratic-code/coding-standard/zipball/2f049ad261b9649ccd57756efd5940316ff01443",
-                "reference": "2f049ad261b9649ccd57756efd5940316ff01443",
+                "url": "https://api.github.com/repos/idiosyncratic-code/coding-standard/zipball/c14ec16a05dafc7f27fbf782c166da0e2db65da2",
+                "reference": "c14ec16a05dafc7f27fbf782c166da0e2db65da2",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +318,7 @@
             ],
             "description": "The Idiosyncratic Coding Standard.",
             "homepage": "https://www.doctrine-project.org/projects/coding-standard.html",
-            "time": "2019-11-27T20:02:40+00:00"
+            "time": "2019-11-28T00:39:36+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
