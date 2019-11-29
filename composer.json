@@ -1,5 +1,6 @@
 {
   "name": "idiosyncratic/http-exceptions",
+  "description": "Exceptions for PSR HTTP Server Requests",
   "type": "library",
   "license": "ISC",
   "authors": [
