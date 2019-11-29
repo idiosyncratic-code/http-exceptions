@@ -15,7 +15,7 @@ composer require idiosyncratic/http-exceptions
 ## Usage
 
 ```php
-use Idiosyncratic\Http\Exception\InternalServerError;
+use Idiosyncratic\Http\Exception\Server\InternalServerError;
 
 // $request must be an instance of Psr\Http\Message\ServerRequestInterface;
 throw new InternalServerError($request);
@@ -23,7 +23,7 @@ throw new InternalServerError($request);
 You may also wrap a previous exception, just as with a regular Exception:
 
 ```php
-use Idiosyncratic\Http\Exception\InternalServerError;
+use Idiosyncratic\Http\Exception\Server\InternalServerError;
 
 
 try {
