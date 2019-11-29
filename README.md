@@ -27,7 +27,7 @@ use Idiosyncratic\Http\Exception\Server\InternalServerError;
 
 
 try {
-    throw new \Exception('Something went wrong);
+    throw new \Exception('Something went wrong');
 } catch (\Throwable $throwable) {
     // $request must be an instance of Psr\Http\Message\ServerRequestInterface;
     throw new InternalServerError($request, $throwable);
